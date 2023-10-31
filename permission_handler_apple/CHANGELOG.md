@@ -1,3 +1,7 @@
+## 9.1.5
+
+Removes the `ERROR_ALREADY_REQUESTING_PERMISSIONS` error from the iOS platform, since the platform itself does not have an issue with it, and ignores the second call.
+
 ## 9.1.4
 
 * Adds checking whether Bluetooth service is enabled through `Permission.bluetooth.serviceStatus`.
