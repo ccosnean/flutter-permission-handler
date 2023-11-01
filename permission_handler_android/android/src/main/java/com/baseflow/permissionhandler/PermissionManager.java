@@ -316,12 +316,12 @@ final class PermissionManager implements PluginRegistry.ActivityResultListener, 
         List<Integer> permissions,
         RequestPermissionsSuccessCallback successCallback,
         ErrorCallback errorCallback) {
-        if (pendingRequestCount > 0) {
-            errorCallback.onError(
-                "PermissionHandler.PermissionManager",
-                "A request for permissions is already running, please wait for it to finish before doing another request (note that you can request multiple permissions at the same time).");
-            return;
-        }
+        // if (pendingRequestCount > 0) {
+        //     errorCallback.onError(
+        //         "PermissionHandler.PermissionManager",
+        //         "A request for permissions is already running, please wait for it to finish before doing another request (note that you can request multiple permissions at the same time).");
+        //     return;
+        // }
 
         if (activity == null) {
             Log.d(PermissionConstants.LOG_TAG, "Unable to detect current Activity.");
